@@ -1,0 +1,6 @@
+pytorch==2.0.0
+transformers==4.31.0
+gradio
+sentencepiece
+protobuf
+cpm-kernels
