@@ -4,3 +4,4 @@ gradio
 sentencepiece
 protobuf
 cpm-kernels
+icetk

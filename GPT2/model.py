@@ -158,7 +158,7 @@ class GPT2Model(nn.Module):
             position_ids = torch.arange(past_length, input_ids.size(-1) + past_length, dtype=torch.long,
                                         device=input_ids.device)
             position_ids = position_ids.unsqueeze(0).expand_as(input_ids)
-
+        print(self.wte(input_ids))
         input_shape = input_ids.size()
         input_ids = input_ids.view(-1, input_ids.size(-1))
         position_ids = position_ids.view(-1, position_ids.size(-1))
